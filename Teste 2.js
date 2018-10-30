@@ -1,5 +1,5 @@
 // Gera o Lancamento
-class LancamentoVendas {
+class Lancamento {
     constructor(nome = 'Generico', valor = 0, validade = "10/11/18"){
         this.nome = nome
         this.valor = valor
@@ -29,9 +29,9 @@ class CicloFinanceiro{
 }
 
 // Adiciona Lancameto
-const salario = new LancamentoVendas("Salario" , 45000,"10/11/18")
-const contaDeLuz = new LancamentoVendas('luz', -200, "10/11/18")
-const devendo = new LancamentoVendas("Drogas", -42000, "10/11/18")
+const salario = new Lancamento("Salario" , 45000,"10/11/18")
+const contaDeLuz = new Lancamento('luz', -200, "10/11/18")
+const devendo = new Lancamento("Drogas", -42000, "10/11/18")
 
 // Gera um novo Ciclo financeiro e adiciona lancamentos
 const contas = new CicloFinanceiro(6,2018)
